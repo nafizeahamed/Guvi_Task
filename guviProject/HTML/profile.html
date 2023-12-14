@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="style.css">
+    <title>User Profile</title>
+
+</head>
+<body>
+    <div class="container">
+        <div>
+        <h2>User Profile</h2>
+        </div>
+        <form id="profileForm" method="post">
+            <div class="form-group">
+                <label for="fName">First Name:</label>
+                <input type="text" class="form-control" id="fName" name="fName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="lName">Last Name:</label>
+                <input type="text" class="form-control" id="lName" name="lName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone No:</label>
+                <input type="tel" class="form-control" id="phone" name="phone" required>
+            </div>
+
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" class="form-control" id="age" name="age" min="1" max="100" required>
+            </div>
+
+            <button type="button" onclick="profileFunc()" class="btn btn-success">Save Profile</button>
+            <button type="button" onclick="logoutFunc()" class="btn btn-danger">Log Out</button>
+            <div id="Message" class="alert alert-success mt-3" role="alert" style="display: none;">
+                msg!!!
+            </div>
+        </form>
+    </div>
+
+    <script src="JS/profile.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>

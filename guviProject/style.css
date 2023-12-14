@@ -1,0 +1,16 @@
+body
+{
+  background-color: #f8f9fa; /* Light gray background */
+}
+
+.container {
+            max-width: 400px; /* Set the maximum width of the container */
+            margin-top: 50px; /* Add some top margin */
+            border: 1px solid #ddd; /* Add a 1px solid border */
+            padding: 20px; /* Add some padding */
+            border-radius: 5px; /* Add rounded corners */
+            background-color: #fff; /* White background */
+}
+h2 {
+            color: #007bff; /* Blue heading color */
+}
