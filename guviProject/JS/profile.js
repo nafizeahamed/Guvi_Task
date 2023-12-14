@@ -6,7 +6,7 @@ function profileFunc() {
     var age = document.getElementById("age").value;
 
     var xhr = new XMLHttpRequest();
-    xhr.open("POST", "PHP/Login.php", true);
+    xhr.open("POST", "../PHP/profile.php", true);
     xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 
     xhr.onreadystatechange = function () {
@@ -32,6 +32,6 @@ document.getElementById("Message").innerHTML="Logged Out successfully!!!!";
 document.getElementById("Message").style.display = "block";
 localStorage.removeItem('username');
 localStorage.removeItem('isLoggedIn');
-window.location.href = "login.html";
+window.location.href = "../HTML/login.html";
 
 }
