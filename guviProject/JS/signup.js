@@ -3,7 +3,7 @@ document.getElementById("signupButton").addEventListener("click", function() {
     var password = document.getElementById("password").value;
 
     var xhr = new XMLHttpRequest();
-    xhr.open("POST", "PHP/signup.php", true);
+    xhr.open("POST", "../PHP/signup.php", true);
     xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 
     xhr.onreadystatechange = function() {
