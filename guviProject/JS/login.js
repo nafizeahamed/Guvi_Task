@@ -3,7 +3,7 @@ function loginFunc() {
     var password = document.getElementById("password").value;
 
     var xhr = new XMLHttpRequest();
-    xhr.open("POST", "PHP/Login.php", true);
+    xhr.open("POST", "../PHP/Login.php", true);
     xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 
     xhr.onreadystatechange = function () {
@@ -19,7 +19,7 @@ function loginFunc() {
                     document.getElementById("failureMessage").classList.remove("alert-danger");
                     document.getElementById("failureMessage").classList.add("alert-success");
                     document.getElementById("failureMessage").style.display = "block";
-                    window.location.href = "profile.html";
+                    window.location.href = "../HTML/profile.html";
                 } else {
                     // Handle failure, display an error message
                     document.getElementById("failureMessage").style.display = "block";
